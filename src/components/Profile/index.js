@@ -34,7 +34,7 @@ const Profile = () =>{
   const arrayDriection = ['right','left','down','up']
     return(
       <ContactContainer >
-        <Row justify="space-between" align="middle">
+        <Row justify="center" align="middle">
           {/* <Col lg={12} md={11} sm={24} xs={24}>
             <Slide {...{direction : 'left'}}>
               <h6>Technology</h6>
