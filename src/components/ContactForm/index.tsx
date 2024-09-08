@@ -9,11 +9,15 @@ import Input from "../../common/Input";
 import TextArea from "../../common/TextArea";
 import { ContactContainer, FormGroup, Span, ButtonContainer } from "./styles";
 import { Slide, Zoom } from "react-awesome-reveal";
+import { Backdrop, CircularProgress } from "@mui/material";
+import { useEffect, useState } from "react";
 
 const Contact = ({ title, content, id, t }: ContactProps) => {
-  const { values, errors, handleChange, handleSubmit } = useForm(
+  const { values, errors, handleChange, handleSubmit, isLoading } = useForm(
     validate
   ) as any;
+  const [displayedText, setDisplayedText] = useState('Please Wait ..');
+  const fullText = '.....';  // The complete text to display
 
   const ValidationType = ({ type }: ValidationTypeProps) => {
     const ErrorMessage = errors[type];
@@ -23,6 +27,26 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
       </Zoom>
     );
   };
+
+  useEffect(() => {
+    if(isLoading){
+      let index = 0;
+
+    // Create an interval to progressively display letters
+    const interval = setInterval(() => {
+      setDisplayedText((prev) => prev + fullText[index]);
+      index += 1;
+
+      // Reset the text after the full text has been displayed
+      if (index === fullText.length) {
+        setDisplayedText('Please Wait ..');  // Clear the text
+        index = 0;  // Reset the index
+      }
+    }, 200);  // Adjust speed (in milliseconds) of adding letters
+    // Clean up interval on component unmount
+    return () => clearInterval(interval);
+    }
+  }, [isLoading]);
 
   return (
     <ContactContainer id={id}>
@@ -71,6 +95,15 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
           </Slide>
         </Col>
       </Row>
+      <Backdrop
+        sx={(theme) => ({ color: 'rgb(255, 130, 92)', zIndex: theme.zIndex.drawer + 1 })}
+        open={isLoading}
+      >
+        <div style={{textAlign: 'center'}}>
+        <CircularProgress color="inherit" />
+        <p style={{fontWeight: 'bolder', color: 'rgb(255, 130, 92)'}}>{displayedText}</p>
+        </div>
+    </Backdrop>
     </ContactContainer>
   );
 };
