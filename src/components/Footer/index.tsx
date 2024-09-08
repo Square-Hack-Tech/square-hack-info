@@ -71,17 +71,21 @@ const Footer = ({ t }: any) => {
               </Large>
             </Col>
             <Col lg={6} md={6} sm={12} xs={12}>
-              <Language>{t("Let's Chat")}</Language>
-              <FooterContainer style={{width: "30%"}}>
-                <SocialLink
+            <Language>{t("Let's Chat")}</Language>
+              <LanguageSwitchContainer>
+              <LanguageSwitch>
+              <SocialLink
                   href="https://wa.me/8178508993?text=Hello%2C%20I%27m%20interested%20in%20your%20services"
                   src="whatsapp.png"
                 />
+                </LanguageSwitch>
+                <LanguageSwitch>
                 <SocialLink
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=sh@squarehack.in,squarehack1@gmail.com&su=SquareHack%20Client&body=Hello%2C%20I%27m%20interested%20in%20your%20services"
                   src="email.svg"
                 />
-              </FooterContainer>
+                </LanguageSwitch>
+              </LanguageSwitchContainer>
             </Col>
             <Col lg={6} md={6} sm={12} xs={12}>
               <Empty />
@@ -170,12 +174,12 @@ const Footer = ({ t }: any) => {
                 src="twitter.svg"
               />
               <SocialLink
-                href="https://www.linkedin.com/in/square-hack-7708a623a"
-                src="linkedin.svg"
-              />
-              <SocialLink
                 href="https://medium.com/@lashakakabadze/"
                 src="medium.svg"
+              />
+              <SocialLink
+                href="https://www.linkedin.com/in/square-hack-7708a623a"
+                src="linkedin.svg"
               />
             </FooterContainer>
           </Row>
