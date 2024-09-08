@@ -1,15 +1,15 @@
 {
-  "title": "Light, fast & responsive",
-  "text": "This template is ready to use, so you don't need to change anything at a component level, unless you want to customize the default styling.",
+  "title": "Optimized Software & App Development",
+  "text": "Our development solutions are designed to be efficient and scalable. We prioritize performance and SEO to ensure your software and apps not only run smoothly but also rank well in search engines.",
   "section": [
     {
-      "title": "Why Antd?",
-      "content": "Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI.",
+      "title": "Why Focus on SEO?",
+      "content": "SEO integration is crucial for ensuring that your software and app reach the widest audience. We implement best practices to boost visibility and drive more traffic.",
       "icon": "notes.svg"
     },
     {
-      "title": "Why @mui/material?",
-      "content": "Styled Components gives you total control over your components.",
+      "title": "Why Choose Our Solutions?",
+      "content": "Our software and app development services are tailored to meet your unique needs, providing cutting-edge features and optimization for both user experience and search engine ranking.",
       "icon": "notes.svg"
     }
   ]

@@ -12,23 +12,32 @@ const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
+// background: url("img/page/sh-first.jpg");
+//   background-repeat: no-repeat;
 
 const Home = () => {
   return (
     <Container>
       <ScrollToTop />
+      {/* <div style={{background:'url(img/page/sh-first.jpg)', backgroundRepeat: 'no-repeat', backgroundSize:'100% 100%', width:'150%',marginLeft:-200}}> */}
+      
+      {/* </div> */}
+      
       <ContentBlock
         type="right"
         title={IntroContent.title}
         content={IntroContent.text}
         button={IntroContent.button}
-        icon="developer.svg"
-        id="intro"
+        icon="graphs.svg"
+        id="home"
       />
-      <MiddleBlock
+      <ContentBlock
+        type="left"
         title={MiddleBlockContent.title}
         content={MiddleBlockContent.text}
         button={MiddleBlockContent.button}
+        icon="developer.svg"
+        id="top"
       />
       <ContentBlock
         type="left"
@@ -36,21 +45,21 @@ const Home = () => {
         content={AboutContent.text}
         section={AboutContent.section}
         icon="graphs.svg"
-        id="about"
+        id="blog"
       />
       <ContentBlock
         type="right"
         title={MissionContent.title}
         content={MissionContent.text}
         icon="product-launch.svg"
-        id="mission"
+        id="product"
       />
       <ContentBlock
         type="left"
         title={ProductContent.title}
         content={ProductContent.text}
         icon="waving.svg"
-        id="product"
+        id="team"
       />
       <Profile />
       <Contact

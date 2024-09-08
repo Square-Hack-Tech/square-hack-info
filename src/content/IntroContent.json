@@ -1,12 +1,14 @@
 {
-  "title": "Landing page template for developers & startups",
-  "text": "Beautifully designed templates using React.js, ant design and @mui/material! Save weeks of time and build your landing page in minutes.",
+  "title": "Custom Solutions for Developers & Startups",
+  "text": "Our expertly crafted templates, utilizing React.js, Ant Design, and MUI, allow developers and startups to build professional websites and applications quickly. Save valuable time and create high-performance solutions with ease.",
   "button": [
     {
-      "title": "Explore"
+      "title": "Explore",
+      "scrollTo": "product"
     },
     {
       "title": "Learn more",
+      "scrollTo": "team",
       "color": "#fff"
     }
   ]

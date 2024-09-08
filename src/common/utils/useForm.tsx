@@ -18,7 +18,7 @@ export const useForm = (validate: any) => {
     event.preventDefault();
     setErrors(validate(values));
     // Your url for API
-    const url = "";
+    const url = "https://contact-us-server-ypg1.onrender.com/send-email";
     if (Object.keys(values).length === 3) {
       axios
         .post(url, {
@@ -32,8 +32,9 @@ export const useForm = (validate: any) => {
 
   useEffect(() => {
     if (Object.keys(errors).length === 0 && shouldSubmit) {
-      setValues("");
+      setValues({});
       openNotificationWithIcon();
+      setShouldSubmit(false)
     }
   }, [errors, shouldSubmit]);
 

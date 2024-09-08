@@ -50,7 +50,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                   type="text"
                   name="email"
                   placeholder="Your Email"
-                  value={values.email || ""}
+                  value={values?.email || ""}
                   onChange={handleChange}
                 />
                 <ValidationType type="email" />

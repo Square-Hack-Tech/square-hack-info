@@ -9,23 +9,36 @@ import { ContactContainer } from '../ContactForm/styles';
 
 const data = [
   {
+    name : "Shankar Kumar",
+    designation : "Chief Technology Officer",
+    degree: "B-Tech [CUSAT]",
+    imgUrl : 'img/page/sh-first.jpg',
+    experience: "5-Years"
+  },
+  {
     name : "Prakash",
     designation : "Software Developer",
-    imgUrl : 'img/profile/prakash.jpeg'
+    degree: "B-Tech [CUSAT]",
+    imgUrl : 'img/profile/prakash.jpeg',
+    experience: "3-Years"
   },
   {
     name : "Ravi Kumar",
     designation : "Software Developer",
-    imgUrl : 'img/profile/ravi.jpeg'
+    degree: "B-Tech [CUSAT]",
+    imgUrl : 'img/profile/ravi.jpeg',
+    experience: "4-Years"
   },
   {
-    name : "Amit Kumar",
-    designation : "Product Manager",
-    imgUrl : 'img/profile/amit.jpg'
+    name : "Avinash Kumar Singh",
+    designation : "Research Scholar / Product Manager",
+    degree: "M-Tech [IIT Dhanbad]",
+    imgUrl : 'img/profile/avinash.jpeg'
   },
   {
     name : "Neelanchal Maurya",
     designation : "Product Manager",
+    degree: "B-Tech[IIT Bombay]",
     imgUrl : 'img/profile/neelanchal.jpeg'
   },
 ]

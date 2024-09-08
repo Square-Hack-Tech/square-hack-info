@@ -56,9 +56,10 @@ const Footer = ({ t }: any) => {
               <Para>
                 {t(`Do you have any question? Feel free to reach out.`)}
               </Para>
-              <a href="mailto:squarehack1@gmail.com">
+              {/* <a href="mailto:squarehack1@gmail.com">
                 <Chat>{t(`Let's Chat`)}</Chat>
-              </a>
+              </a> */}
+              
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
               <Title>{t("Policy")}</Title>
@@ -68,6 +69,19 @@ const Footer = ({ t }: any) => {
               <Large left="true" to="/">
                 {t("Software Principles")}
               </Large>
+            </Col>
+            <Col lg={6} md={6} sm={12} xs={12}>
+              <Language>{t("Let's Chat")}</Language>
+              <FooterContainer style={{width: "30%"}}>
+                <SocialLink
+                  href="https://wa.me/8178508993?text=Hello%2C%20I%27m%20interested%20in%20your%20services"
+                  src="whatsapp.svg"
+                />
+                <SocialLink
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=sh@squarehack.in,squarehack1@gmail.com&su=SquareHack%20Client&body=Hello%2C%20I%27m%20interested%20in%20your%20services"
+                  src="email.svg"
+                />
+              </FooterContainer>
             </Col>
             <Col lg={6} md={6} sm={12} xs={12}>
               <Empty />
@@ -83,8 +97,11 @@ const Footer = ({ t }: any) => {
             <Col lg={10} md={10} sm={12} xs={12}>
               <Empty />
               <Language>{t("Address")}</Language>
-              <Para>Sasaram Patna</Para>
-              <Para>802213 Bihar</Para>
+              <Para>+91-8178508993</Para>
+              <Para>squarehack1@gmail.com</Para>
+              <Para>sh@squarehack.in</Para>
+              <Para>New Delhi</Para>
+              <Para>110016 Delhi</Para>
               <Para>India</Para>
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
@@ -105,17 +122,17 @@ const Footer = ({ t }: any) => {
             <Col lg={6} md={6} sm={12} xs={12}>
               <Label htmlFor="select-lang">{t("Language")}</Label>
               <LanguageSwitchContainer>
-                <LanguageSwitch onClick={() => handleChange("en")}>
+              <LanguageSwitch onClick={() => handleChange("es")}>
                   <SvgIcon
-                    src="united-states.svg"
+                    src="india.svg"
                     aria-label="homepage"
                     width="30px"
                     height="30px"
                   />
                 </LanguageSwitch>
-                <LanguageSwitch onClick={() => handleChange("es")}>
+                <LanguageSwitch onClick={() => handleChange("en")}>
                   <SvgIcon
-                    src="spain.svg"
+                    src="united-states.svg"
                     aria-label="homepage"
                     width="30px"
                     height="30px"

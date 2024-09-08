@@ -3,12 +3,15 @@ import { MenuOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 
 export const HeaderSection = styled("header")`
-  padding: 1rem 0.5rem;
-
-  .ant-row-space-between {
-    align-items: center;
-    text-align: center;
-  }
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  z-index: 1000;
+  color: white;
+  background: white;
+  height: 100px
 `;
 
 export const LogoContainer = styled(Link)`
@@ -45,6 +48,7 @@ export const ContactWrapper = styled("div")<any>`
 export const Burger = styled("div")`
   @media only screen and (max-width: 890px) {
     display: block;
+    margin: 10px 10px 100px 0;
   }
 
   display: none;

@@ -37,14 +37,17 @@ const Header = ({ t }: any) => {
     };
     return (
       <>
-        <CustomNavLinkSmall onClick={() => scrollTo("about")}>
-          <Span>{t("About")}</Span>
+        <CustomNavLinkSmall onClick={() => scrollTo("home")}>
+          <Span>{t("Home")}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("mission")}>
-          <Span>{t("Mission")}</Span>
+        <CustomNavLinkSmall onClick={() => scrollTo("blog")}>
+          <Span>{t("Blog")}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall onClick={() => scrollTo("product")}>
           <Span>{t("Product")}</Span>
+        </CustomNavLinkSmall>
+        <CustomNavLinkSmall onClick={() => scrollTo("team")}>
+          <Span>{t("Team")}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall
           style={{ width: "180px" }}
@@ -63,10 +66,8 @@ const Header = ({ t }: any) => {
       <Container>
         <Row justify="space-between">
           <LogoContainer to="/" aria-label="homepage">
-            <div style={{paddingTop:30}}>
-              <SvgIcon src="logo.gif" width="100px" height="100px" />
-            </div>
-            <SvgIcon src="logo1.gif" width="300px" height="150px" />
+          <SvgIcon src="logo.gif" width="80px" height="80px" />
+          <SvgIcon src="logo1.gif" width="150px" height="80px" />
           </LogoContainer>
           <NotHidden>
             <MenuItem />
