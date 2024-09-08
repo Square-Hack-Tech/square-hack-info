@@ -75,7 +75,7 @@ const Footer = ({ t }: any) => {
               <FooterContainer style={{width: "30%"}}>
                 <SocialLink
                   href="https://wa.me/8178508993?text=Hello%2C%20I%27m%20interested%20in%20your%20services"
-                  src="whatsapp.svg"
+                  src="whatsapp.png"
                 />
                 <SocialLink
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=sh@squarehack.in,squarehack1@gmail.com&su=SquareHack%20Client&body=Hello%2C%20I%27m%20interested%20in%20your%20services"
